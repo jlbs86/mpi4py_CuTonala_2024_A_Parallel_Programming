@@ -1,0 +1,338 @@
+1 Dragon Ball
+2 Dragon Ball z
+3 Dragon Ball z Kai
+4 Dragon Ball GT
+5 Dragon Ball Super
+6 YU-GI-OH
+7 Naruto
+8 Naruto Shippuden
+9 Super Campeones
+10 Inuyasha
+11 Sailor Moon
+12 Candy Candy
+13 Bleach
+14 Sword Art Online
+15 Sword Art Online II
+16 Mirai Nikki
+17 Gamers
+18 Remi
+19 Inazuma Eleven
+20 Tokyo Ghoul
+21 Tokyo Ghoulv
+22 Himouto Umaru-chan
+23 Pokemon Indigo League
+24 Pokemon Indigo League II
+25 Digimon Aventure
+26 Digimon Aventure II
+27 Shingeky no Kyojin
+28 Shingeky no Kyojin Season 2
+29 Ranma 1/2
+30 Fuuka
+31 Sakura Card Captor
+32 Shaman-King
+33 No game No life
+34 Zenki
+35 Full Metal Alchemist
+36 Onemate
+37 RoonMate
+38 Beyblade
+39 Beyblade Metal Fusion
+40 Mazinger Z
+41 Seint Senyia
+42 Himouto Umaru-Chan R
+43 One Punch
+44 Kyoukai no Kanata
+45 Full Metal Alchemist Brotherhood
+46 Shigatsu wa Kimi no Uso
+47 Golden Time
+48 Violet Evergarden
+49 Tokyo Ghoul: Re
+50 Kimi no Nawa
+51 Gun Gale Online
+52 Another
+53 Noragami
+54 Noragami Aragoto
+55 Steins Gate
+56 Akame ga Kill
+57 Steins Gate 0
+58 Kakuriyu no Yadomeshi
+59 Hataraku Saibot
+60 Tsukumogami Kashimasu
+61 Shingeky no Kyojin Season 3
+62 New Game
+63 New Game 2
+64 Satsuriku no Tenshi
+65 Yama no Susume
+66 Ajin
+67 Ajin 2do Season
+68 Yama no Susume 2do Season
+69 Yama no Susume Third Season
+70 Kill la Kill
+71 Gakuen Babysitter
+72 Big Fish & Begonia
+73 Prison School
+74 Shiki Oriori
+75 Boku dake ga Inai Machi
+76 Little Witch Academia
+77 Little Witch Academia Tv
+78 Kakegurui
+79 Uchai no Maid ga Uzasugiru
+80 Zombieland Saga
+81 Seishun Buta Yarou wa Bunny Girl Senpai no Yume o Minai wo
+82 Amagami SS
+83 Amagami ss Plus
+84 Irozuku Sekai Ashita no Kara
+85 Goblin  Slayer
+86 Ullyses Jehhane Darc to Renkin NO Kishi
+87 Kitsune no Koe
+88 Shojo Shumatsuu Ryouko
+89 Hi Score Girl
+90 Sekai de Ichiban Tsuyoku Naritai
+91 Ueno-San wa Bukiyou
+92 Watashi ni Tenshi ga Maiorita
+93 Pastel Memories
+94 Kakegurui XX
+95 Yakuzoku no Neverland
+96 Boogiepop wa Warawanai (2019)
+97 Domestic na Kanojo
+98 Fugiken na Mononokean 
+99 Fugiken na Mononokean Tsuzuki
+100 Yuru Camp
+101 Sword Art Online Alicization
+102 Captain Tsubasa (2018)
+103 Elfen Lied
+103 Luces en el cielo
+104 Occultic; Nine
+105 Kanojo to kanojo no Nejo: Everything Flows
+106 Kono Subarashii Sekai ni Shukufuku wo!
+107 Kono Subarashii Sekai ni Shukufuku wo!
+108 Gunslinger Stratos: The animation
+109 I Want to eat your Pancreas
+110 Subete ga F Ni Naru: The Perfect Insider
+111 Hotarubi no Mori e
+112 Fairy Gone
+113 Senryuu Shoujo
+114 Midara na Ao-Chan wa Benkyou ga Dekinai
+115 Nobunaga-Sensei no Osanazuma
+116 Haibane Renmei
+117 Nande Koko ni sensei ga
+118 Namu amida Butsu!: Rendai Utena
+119 Yatogame-chan Kansatsu Nikki
+120 Tate no Yuusha no Nariagari
+121 Kenja no Mago
+122 Saranzanmai
+123 Shingeky no Kyojin Season 3 part 2
+124 Karakai Jouzu no Takagi-san
+125 One Punch Man 2do Season 
+126 Non Non Biyori
+127 Non Non Biyori Repeat
+128 Inuyashiki
+129 Katsute Kami Datta Kemono-tachi e
+130 Tejina-Senpai
+131 Sounan desu ka?
+132 Dumbell Nan Kilo Moteru
+133 Maou-sama, Retry
+134 Children of the Whales
+135 Uchi no Musume no Tame naraba, Ore wa Moshikashitara Maou mo Taoseru kamo Shirenai.
+136 Araburu Kisetsu no Otome-domo yo
+137 Joshikousei no Mudazukai
+138 Ano Hi Mita Hana no Namae o Boku-tachi wa Mada Shiranai
+139 Naka no Hito Genome 
+140 Karakai Jouzu no Takagi-san 2
+141 Ride Your Wave
+142 Kimetsu no Yaiba
+143 Kono Yo no Hate de Koi wo Utau Shoujo YU-NO
+144 Arifureta Shokugyou de Sekai Saikyou
+145 Baki (2018)
+146 Akira
+147 Seishun Buta Yaro wa Yumemiru Shojo no Yume o Minai
+148 Natsunagu!
+149 Houkago Saikoro Club 
+150 Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!
+151 Chuubyou Gekihatsu Boy
+152 Null Peta
+153 VallxLove
+154 Watashi, Nouryoku wa Heikinchi de tte Itta yo ne!
+155 Kandagawa Jet Girls
+156 Assasins Pride
+157 Sword Art Online Alicization War  the Underword
+158 Keishichou Tokumu-bu Tokushu Kyouaku-han Taisaku-Shitsu Dai-Nana-ka -Tokunana-
+159 Ore wo Suki nano wa Omae dake ka yo
+160 Z/X Code Reunion
+161 Robotics Notes
+162 Rifles is Beatiful
+163 Violet Evergarden Automemory Eternity Doll
+164 Konosuba Legend of Crison
+165 Goblin Slayer goblin's crow
+166 El viaje de Chihiro
+167 Azur Lane
+168 Darwin's Game 
+169 Eizouken ni wa Te wo Dasuna!
+170 Yatogame-chan Kansatsu Nikki 2 Satsume
+171 Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu
+172 Somali to Mori no Kamisama
+173 Jibaku Shounen Hanako-kun
+174 K-ON!
+175 Runway de Waratte
+176 Kyokou Suiri (In/Spectre) 
+177 Pet
+178 Dorohedoro
+179 Ishozuku Reviews
+180 K-ON!! 2
+181 Yesterday or Uwatte
+182 Psycho Pass
+183 Psycho Pass 2
+184 Appare-Ranman!
+185 Sword Art Online Alicization War of Underword part 2
+186 Hi Score Girl 2
+187 Peter Grill to Kenja no Jikan
+188 Dokyuu Hentai HxEros 
+189 Uzaki-chan wa Asobitai!
+190 Rent a Girlfriend
+191 Monster Musume no Oisha-san
+192 Tenki no Ko
+193 100-man no Itochi no Ue ni Ore wa Tatte Iru
+194 Majo no TabiTabi
+195 Iwa Kakeru! Sport Climbing Girls
+196 Akudama Drive
+197 Psycho pass 3
+198 Dororo
+199 Hatarakou Saibot 2
+200 Yuru Camp Season 2
+201 Hataraku Saibo Black
+202 Mushoku Tensei: Isekai Ittara Honki Dasu
+203 Ura Sekai Picnic
+204 Higurashi no Naku Koro ni (2020)
+205 Yakuzoku no Neverland Season 2
+206 Jujutsu Kaisen
+207 Non non biyori Nonstop
+208 Shingeky no Kyojin Final Season
+209 Yatogame-chan Kansatsu Nikki 3 Satsume
+210 Horimiya
+211 Kimetsu no yaiba Muguen of Train
+212 Mahou Shoujo Tokushusen Asuka
+213 Journey: The Princess the Snow and Blood
+214 Sentouin, Hakenshimasu!
+215 Super Cub
+216 Zombieland Saga Revenge
+217 Ijiranaide, Nagatoro-san
+218 Slime Taoshite 300-nen, Shiranai Uchi ni Level Máx ni Nattemashita 
+219 Hige wo Suru Soshite Joshikousei wo Hirou
+220 Sayonara Watashi no Cramer
+221 Serial Experiments Lain
+222 Death Note
+223 Nekomonogatari (Neko)
+224 Fumetsu no Anata e
+225 Peach Boy Riverside
+226 Tokyo Revenge
+227 Tantei wa Mou Shinderu 
+228 Tsuki ga Michibiku Isekai Douchuu
+229 Meikyuu Black Company 
+230 100-man no Inochi no Ue ni Ore wa Tatte Iru 2do season
+231 Bokutachi no Remake 
+232 Getsuyoubi no Tawawa
+233 Sonny Boy
+234 Higurashi no Naku Koro ni Sotsu
+235 Vinland Saga
+236 Getsuyoubi no Tawawa 2
+237 Ganbare Douki-Chan
+238 Shiroi Suna no Aquatope 
+239 Blood C
+240 Mushoku Tensei Isekai Ittara Honki Dasu 2nd Cour
+241 Mieruko-chan 
+242 Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei
+243 Takp op Destiny
+244 Komi-san wa Komyushou
+245 Taishou Otome Otogibanashi
+246 Senpai ga Urusai Kouhai no Hanashi
+247 Blend S
+248 Kimetsu no Yaiba Yuukaku-hen
+249 Sword Art Online Progressive: Aria of a Starless Night
+250 Leadale no Dachi nite
+251 Hakozume: Koban Joshi no Gyakushuu
+252 Platinum End
+253 Shumatsuu no Harem
+254 Slow Loop
+255 Karakai Jouzu no Takagi-san 3
+256 Jujutsu Kaizen 0
+257 Akebi-chan no Sailor-fuku
+258 Sono Bisque Doll wa Koi wo Suru
+259 SABUKUI BISCO 
+260 Arifureta Shokugyou de Sekai Saikyou 2do Season
+261 Shingeky no Kyojin The final Season Part 2
+262 Shaman King 2021
+263 Happy Sugar Life
+264 Paripi Koumei
+265 Aharen-san wa Hakarenai
+266 Shokei Shoujo no Virgin Road
+267 Otome Game Sekai Wa Mob ni Kibishii Sekai desu
+268 Tomodachi Game
+269 Deaimon
+270 Komi-san wa, Comyushou desu 2nd Season
+271 Tate no Yuusha no Nariagari Season 2
+272 SPY X FAMILY
+273 GoodBye Goondles
+274 Rent a Girlfriend 2
+275 Kinsou no Vermeil ~Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsukisusumu
+276 Mamahaha no Tsurego ga Motokano datta
+277 Isekai Meikyuu de Harem wo
+278 AOASHI
+279 Lycoris Recoil
+280 Isekai Yakkyoku
+281 Yofukashi no Uta
+282 Summer Time Render
+283 Kakkou no linazuke
+284 Saikin Yatotta Maid ga Ayashii
+285 C Danchi
+286 Karakai Jouzu no Takagi-san: The movie
+287 Yama No Susume Next Summit
+288 Do It Yourself 
+289 Akiba Maid Sensou
+290 Uchi no Shishou wa Shippo ga Nai
+291 Uzaki-chan wa Asobitai! ω
+292 SPY x FAMILY Cour 2
+293 Peter Grill to Kenja no Jikan Super Extra
+294 Chaisaw Man
+295 Fumetsu no Anata e Season 2
+296 Ijiranaide, Nagatoro-san 2nd Attack
+297 Boruto Naruto Next Generations
+298 Tomo-chan wa Onnanoko
+299 Spy Kyoshitsu
+300 Kyokou Suiri (In/Spectre) 2
+301 Buddy Daddies
+302 Tokyo Revengers: Seiya Kessen-hen
+303 Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu. 2
+304 Boku no Kokoro no Yabai Yatsu
+305 Kimetsu no Yaiba: Katanakaji no Sato-hen
+306 My Home Hero
+307 Vinland Saga Season 2
+308 Kono Subarashii Sekai ni Bakuen wo!
+309 Yuusha ga Shinda!
+310 Isekai One Turn Kill Nee-san
+311 Megami no Cafe Terrace
+312 Tengoku Daimakyou
+313 Coppelion
+314 Kimi wa Houkago Insomnia
+315 Yumemiru Danshi wa Genjitsushugisha
+316 Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou
+317 Horimiya -piece-
+318 Mushoku Tensei: Isekai Ittara Honki Dasu 2nd Season
+319 Suki na Ko ga Megane wo Wasureta
+320 Kanojo, Okarishimasu 3rd Season
+321 Uchi no Kaisha no Chiisai Senpai no Hanashi
+322 Bakuon!!
+323 Under Ninja
+324 Goblin Slayer S2
+325 Tate no Yuusha no Nariagari 3
+326 Spy X Family 2
+327 Dark Gathering
+328 Migi to Dali
+329 Tokyo Revengers Tenjiku-Hen
+330 Zom 100: Zombie ni Naru made ni Shitai 100 no Koto 
+331 16 bit Sensation: Another Layer
+332 Jujutsu Kaisen 2
+333
+
+
+
+
