@@ -4,8 +4,7 @@ Este módulo es un ejemplo que sigue las pautas de PEP 8.
 
 import os
 import sys
-import requests
-from flask import Flask
+
 
 
 class MyClass:
