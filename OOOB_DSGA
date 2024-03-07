@@ -1,0 +1,46 @@
+import time
+from collections import deque
+
+class Graph:
+    def __init__(self, graph_dict):
+        self.graph_dict = graph_dict
+
+    def dfs_method(self, start_node):
+        visited = set()
+        stack = [start_node]
+        start_time = time.time()
+        while stack:
+            node = stack.pop()
+            if node not in visited:
+                print(node, end=' ')
+                visited.add(node)
+                stack.extend(self.graph_dict[node] - visited)
+        end_time = time.time()
+        print("\nDFS execution time:", end_time - start_time, "seconds")
+
+    def bfs_method(self, start_node):
+        visited = set()
+        queue = deque([start_node])
+        start_time = time.time()
+        while queue:
+            node = queue.popleft()
+            if node not in visited:
+                print(node, end=' ')
+                visited.add(node)
+                queue.extend(self.graph_dict[node] - visited)
+        end_time = time.time()
+        print("\nBFS execution time:", end_time - start_time, "seconds")
+
+if __name__ == "__main__":
+    graph = {
+        'A': {'B', 'C'},
+        'B': {'A', 'D', 'E'},
+        'C': {'A', 'F'},
+        'D': {'B'},
+        'E': {'B', 'F'},
+        'F': {'C', 'E'}
+    }
+    
+    g = Graph(graph)
+    g.dfs_method('A')
+    g.bfs_method('A')
