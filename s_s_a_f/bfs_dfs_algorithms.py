@@ -72,15 +72,15 @@ class SearchMethods:
             visited.append(current)
 
     @static
-    def dfs_recursive_method(root, target):
+    def dfs_recursive_method(root, target, visited=[]):
         """Deepth search method, iterative aproach."""
-        if not root or root in visitados:
+        if not root or root in visited:
             return
     
         # print(root.value)
         if root.value == target:
             return root
 
-        visitados.append(root)
+        visited.append(root)
         for node in root.childs:
-            dfs_recursivo(node, visitados)
+            dfs_recursivo(node, visited)
