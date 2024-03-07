@@ -6,6 +6,7 @@ class AlgBusqueda:
     """Clase para realizar búsqueda en grafos utilizando DFS y BFS."""
 
     def __init__(self, graph: dict, start: str, goal: str):
+        
         """
         Inicializa la clase GraphSearch.
 

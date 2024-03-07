@@ -1,11 +1,13 @@
-"""Docstring: Tipos de Busqueda BFS y DFS """
+""" Docstring: Tipos de Busqueda BFS y DFS """
 from collections import deque
 import time
 
-"""Docstring: Metodo BFS
+"""
+Docstring: Metodo BFS
 
 Returns:
         list: Lista de nodos que forman el camino desde el nodo inicial al nodo objetivo.
+        
 """
 iniciobfs = time.time()
 def bfs(graph, start, goal):
@@ -25,7 +27,8 @@ def bfs(graph, start, goal):
 time.sleep(1)
 finbfs = time.time()                
                
-"""Docstring: Metodo DFS
+"""
+Docstring: Metodo DFS
 
 Returns:
     list: Lista de nodos que forman el camino desde el nodo inicial al nodo objetivo.
