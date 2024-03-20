@@ -61,7 +61,7 @@ class Graph:
         end_time = time.time()  # Medimos el tiempo de finalización del algoritmo
         print("\nTiempo de ejecución de DFS: {:.10f} segundos".format(end_time - start_time))
 
-# Grafo para BFS
+# Grafo utilizado para BFS
 g_bfs = Graph()
 g_bfs.add_edge(0, 1)
 g_bfs.add_edge(0, 2)
