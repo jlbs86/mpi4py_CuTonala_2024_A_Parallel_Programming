@@ -196,13 +196,14 @@ class MPI4PY_UTILS:
         A range to be integrated is divided into many vertical slivers, and each sliver is approximated with
         a trapezoid. The area of each trapezoid is computed, and then all their areas are added together.
         https://materials.jeremybejarano.com/MPIwithPython/pointToPoint.html#the-trapezoidal-rule
+
+        python mpi4py_basics.py 0.0 1.0 10000
         """
         integral = -(self.support_function(a) + self.support_function(b))/2.0
         # n+1 endpoints, but n trapazoids
-        print(A)
-        for x in numpy.linspace(a, b, n+1, endpoint=True):
+        for x in numpy.arange(a, b, n+1):
                 integral = integral + self.support_function(x)
-        integral = integral* (b-a)/n
+        integral = integral * (b-a)/n
         return integral
 
     @staticmethod
@@ -220,7 +221,7 @@ class MPI4PY_UTILS:
         processes with rank greater than 0 would be waiting for its data range to arrive. By having each process
         calculate its own range, we gain a large speedup.
         Once the integrals are calculated, they are summed up onto process 0.
-        Each process with a rank higher than 0 sends it’s integral to process 0. The first parameter to the
+        Each process with a rank higher than 0 sends it's integral to process 0. The first parameter to the
         Send command is an array storing the information your program wishes to send.
         At the same time, process 0 receives the data from any process. This is what the tag ANY_SOURCE means.
         It tells MPI to not worry about the sender, but rather to just accept data as it comes.
@@ -230,7 +231,10 @@ class MPI4PY_UTILS:
         MPI has two mechanisms specifically designed to partition the message space: tags and communicators.
         The tag parameter is there in the case that two messages with the same size and datatype are
         sent to the same process. In that case, the program would not necessarily be able to tell apart the data.
-        So the programmer can attach different tags that he or she defines to the sent data to keep them straight."""
+        So the programmer can attach different tags that he or she defines to the sent data to keep them straight.
+        mpiexec -n 4 python mpi4py_basics.py 0.0 1.0 10007
+        mpirun -n 4 python mpi4py_basics.py 0.0 1.0 10007
+        """
         #h is the step size. n is the total number of trapezoids
         h = (b-a)/n
         #local_n is the number of trapezoids each process will calculate
@@ -263,19 +267,22 @@ class MPI4PY_UTILS:
         # root process prints results
         if self.comm.rank == 0:
                 print("With n =", n, "trapezoids, our estimate of the integral from" , a, "to", b, "is", total)
-    
+
 
 if __name__ == "__main__":
     instance = MPI4PY_UTILS()
-    #instance.simple_hello_world()
-    #instance.send_and_receive()
+    instance.simple_hello_world()
+    instance.seperate_codes()
+    instance.pass_random_draw()
+    instance.send_and_receive()
     a = float(sys.argv[1])
     b = float(sys.argv[2])
     n = int(sys.argv[3])
+
+    # Executes with:  python mpi4py_basics.py 0.0 1.0 10000
     #integrtal_1 = instance.trap_serial(a, b, n)
     #if integrtal_1:
     #    print("With n =", n, "trapezoids, our estimate of the integral from", a, "to", b, "is", integrtal_1)
-    # mpiexec -n 4 python trapParallel_1.py 0.0 1.0 10000
-    integral = instance.trap_parallel_serial(a, b, n)
-    
 
+    # Executes with: mpirun -n 4 python mpi4py_basics.py 0.0 1.0 10007
+    integral = instance.trap_parallel_serial(a, b, n)
