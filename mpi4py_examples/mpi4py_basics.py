@@ -199,10 +199,9 @@ class MPI4PY_UTILS:
 
         python mpi4py_basics.py 0.0 1.0 10000
         """
-        #h is the step size. n is the total number of trapezoids
-        h = (b-a)/n
         integral = (self.support_function(a) + self.support_function(b))/2.0
         x = a
+        h = (b-a)/n
         for _ in range(1, int(n)):
               x = x + h
               integral = integral + self.support_function(x)
@@ -239,11 +238,12 @@ class MPI4PY_UTILS:
         """
         dest = 0
         total = -1.0
+        #h is the step size. n is the total number of trapezoids
+        h = (b-a)/n
         #local_n is the number of trapezoids each process will calculate
         #note that size must divide n
         local_n = n/self.size
-        #h is the step size. n is the total number of trapezoids
-        h = (b-a)/n
+
         #we calculate the interval that each process handles
         #local_a is the starting point and local_b is the endpoint
         local_a = a + self.rank*local_n*h
@@ -281,9 +281,9 @@ if __name__ == "__main__":
     n = int(sys.argv[3])
 
     # Executes with:  python mpi4py_basics.py 0.0 1.0 10000
-    integrtal_1 = instance.trap_serial(a, b, n)
-    if integrtal_1:
-        print("With n =", n, "trapezoids, our estimate of the integral from", a, "to", b, "is", integrtal_1)
+    #integrtal_1 = instance.trap_serial(a, b, n)
+    #if integrtal_1:
+    #    print("With n =", n, "trapezoids, our estimate of the integral from", a, "to", b, "is", integrtal_1)
 
     # Executes with: mpirun -n 4 python mpi4py_basics.py 0.0 1.0 10007
-    #integral = instance.trap_parallel_serial(a, b, n)
+    integral = instance.trap_parallel_serial(a, b, n)
