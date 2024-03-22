@@ -199,16 +199,18 @@ class MPI4PY_UTILS:
 
         python mpi4py_basics.py 0.0 1.0 10000
         """
-        integral = -(self.support_function(a) + self.support_function(b))/2.0
-        # n+1 endpoints, but n trapazoids
-        for x in numpy.arange(a, b, n+1):
-                integral = integral + self.support_function(x)
-        integral = integral * (b-a)/n
-        return integral
+        #h is the step size. n is the total number of trapezoids
+        h = (b-a)/n
+        integral = (self.support_function(a) + self.support_function(b))/2.0
+        x = a
+        for _ in range(1, int(n)):
+              x = x + h
+              integral = integral + self.support_function(x)
+        return integral * h
 
     @staticmethod
     def support_function(x):
-         """Support method to multiplication"""
+         """Support method: Assu,e f(x) = xˆ2"""
          return x*x
     
     def trap_parallel_serial(self, a, b, n):
@@ -235,34 +237,33 @@ class MPI4PY_UTILS:
         mpiexec -n 4 python mpi4py_basics.py 0.0 1.0 10007
         mpirun -n 4 python mpi4py_basics.py 0.0 1.0 10007
         """
-        #h is the step size. n is the total number of trapezoids
-        h = (b-a)/n
+        dest = 0
+        total = -1.0
         #local_n is the number of trapezoids each process will calculate
         #note that size must divide n
         local_n = n/self.size
-
+        #h is the step size. n is the total number of trapezoids
+        h = (b-a)/n
         #we calculate the interval that each process handles
         #local_a is the starting point and local_b is the endpoint
         local_a = a + self.rank*local_n*h
         local_b = local_a + local_n*h
 
         #initializing variables. mpi4py requires that we pass numpy objects.
-        integral = numpy.zeros(1)
-        recv_buffer = numpy.zeros(1)
-
-        # perform local computation. Each process integrates its own interval
-        integral[0] = self.trap_serial(local_a, local_b, local_n)
+        integral = self.trap_serial(local_a, local_b, local_n)
 
         # communication
         # root node receives results from all processes and sums them
         if self.rank == 0:
-                total = integral[0]
-                for i in range(1, self.size):
-                        self.comm.Recv(recv_buffer, source=MPI.ANY_SOURCE)
-                        total += recv_buffer[0]
+                total = integral
+                for source in range(1, self.size):
+                        integral = self.comm.recv(source=source)
+                        print("PE", self.rank, "<--", source, ",", integral, "\n")
+                        total = total + integral
         else:
                 # all other process send their result
-                self.comm.Send(integral, dest=2)
+                print("PE", self.rank, "-->", dest, ",", integral, "\n")
+                self.comm.send(integral, dest=0)
 
         # root process prints results
         if self.comm.rank == 0:
@@ -271,18 +272,18 @@ class MPI4PY_UTILS:
 
 if __name__ == "__main__":
     instance = MPI4PY_UTILS()
-    instance.simple_hello_world()
-    instance.seperate_codes()
-    instance.pass_random_draw()
-    instance.send_and_receive()
+    #instance.simple_hello_world()
+    #instance.seperate_codes()
+    #instance.pass_random_draw()
+    #instance.send_and_receive()
     a = float(sys.argv[1])
     b = float(sys.argv[2])
     n = int(sys.argv[3])
 
     # Executes with:  python mpi4py_basics.py 0.0 1.0 10000
-    #integrtal_1 = instance.trap_serial(a, b, n)
-    #if integrtal_1:
-    #    print("With n =", n, "trapezoids, our estimate of the integral from", a, "to", b, "is", integrtal_1)
+    integrtal_1 = instance.trap_serial(a, b, n)
+    if integrtal_1:
+        print("With n =", n, "trapezoids, our estimate of the integral from", a, "to", b, "is", integrtal_1)
 
     # Executes with: mpirun -n 4 python mpi4py_basics.py 0.0 1.0 10007
-    integral = instance.trap_parallel_serial(a, b, n)
+    #integral = instance.trap_parallel_serial(a, b, n)
