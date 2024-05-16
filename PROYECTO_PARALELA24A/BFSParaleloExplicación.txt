@@ -1,0 +1,71 @@
+"""
+    Pseudocódigo:
+    INICIO
+        CREAR COLA Q
+        CREAR GRAFO
+            PARA CADA NODO EN GRAFO:
+                VISITADO [NODO] = FALSE
+            INICIA RECORRIDO
+            MIENTRAS:
+                VISITADO[NODO] = TRUE
+            HAZ:
+                Q.INSERTAR(VALOR_NODO)
+            MIENTRAS !Q.EMPTY():
+                NODO_ACTUAL = EXTRAER VALOR
+            PROCESAR(NODO_ACTUAL)
+                PROCESO EN PARALELO:
+                    PARA CADA HILO:
+                        SI !Q.EMPTY():
+                            NODO_ACTUAL = Q.EXTRAER()
+                            PROCESAR(NODO_ACTUAL):
+                                PARA CDA NODO_ADYACENTE AL NODO_ACTUAL:
+                                    SI VISITADO [NODO_ADYACENTE] = FALSE:
+                                        PROCESO EN PARALELO:
+                                        VISITADO [NODO_ADYACENTE] = TRUE
+                                        Q.INSERTAR(NODO_ADYACENTE)
+"""
+
+"""
+    EL PROCESO EN PARALELO SE UTILIZA PARA ASEGURAR QUE LOS HILOS MODIFIQUEN
+    LA ESTRUCTURA DE LOS DATOS COMPARTIDOS (ACCIONES DE RECORRIDO, VALIDACIÓN E INSERCIÓN)
+    PARA EVITAR LAS CONDICIONES DE CARRERA Y GARANTIZAR QUE LA ACTUALIZACIÓN DE LOS DATO SE
+    HAGA DE MANERA CORRECTA.
+
+"""
+
+"""
+    Comando para ejecutar determiando número de procesos
+    mpiexec -n ? python C:\Users\AldoG\Documents\GitHub\CuTonala_2024_A\BFSParalelo.py
+"""
+
+USOS DE ESTE ALGORITMO EN LA ACTULIDAD:
+Tecnología y redes sociales: En plataformas como Facebook, 
+LinkedIn o Twitter, BFS se utiliza para recomendar amigos o 
+conexiones basadas en la red de contactos existente. 
+También se emplea en la propagación de información o contenido viral.
+
+Transporte y logística: En la planificación de rutas de transporte, 
+BFS puede utilizarse para encontrar la ruta más corta entre dos ubicaciones, 
+minimizando el tiempo y los costos de transporte.
+
+Telecomunicaciones: En la optimización de redes de comunicación, 
+BFS se aplica para encontrar la ruta más eficiente para 
+transmitir datos entre nodos, minimizando la latencia y 
+maximizando el ancho de banda disponible.
+
+Finanzas: En el análisis de riesgos y la gestión de carteras, 
+BFS puede ayudar a identificar las conexiones entre diferentes 
+activos financieros y evaluar el impacto potencial de un evento en toda la red.
+
+Manufactura: En la cadena de suministro y gestión de inventario, 
+BFS puede utilizarse para optimizar el flujo de materiales y 
+minimizar los tiempos de espera en la producción.
+
+Salud: En bioinformática y genómica, BFS se utiliza para 
+analizar redes de interacción de proteínas o genes, 
+ayudando a identificar relaciones funcionales y biomarcadores relevantes 
+para enfermedades específicas.
+
+Seguridad cibernética: En la detección de amenazas y el análisis de 
+vulnerabilidades, BFS puede utilizarse para modelar y 
+analizar la propagación de malware o la propagación de ataques en una red informática.
